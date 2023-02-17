@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>S&H Refurbishments</title>
+        <link rel="stylesheet" type="text/css" href="media.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <link rel="icon" type="image/x-icon" href="">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h2>S&H Refurbishments</h2>
+            </div>
+            <div class="navigation">
+                <input type="checkbox" id="nav-checkbox">
+                <label for="nav-checkbox" class="nav-toggle">
+                    <ion-icon name="menu-outline" alt="open menu" class="open"></ion-icon>
+                    <ion-icon name="close-outline" alt="close menu" class="close"></ion-icon>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="media.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <script>
+            $(document).ready(function(){
+                $(window).bind('scroll', function(){
+                    var gap = 50;
+                    if($(window).scrollTop() > gap){
+                        $('header').addClass('active');
+                    } else{
+                        $('header').removeClass('active');
+                    }
+                });
+            });
+        </script>
+
+
+        <div class="hero">
+            <h1>Gallery</h1>
+            <h3>Request a Free Quote</h3>
+            <a href="contact.html"> Message Us</a>
+        </div>
+        <div class="content">
+            
+        </div>
+        <main class="grid">
+            <img src="kitchen_1.png" alt="Kitchen refurbishment">
+            <img src="kitchen_2.png" alt="Kitchen refurbishment">
+            <img src="bathroom_1.png" alt="Bathroom refurbishment">
+            <img src="bathroom_2.png" alt="Bathroom refurbishment">
+            <img src="bathroom_3.png" alt="Bathroom refurbishment">
+            <img src="bathroom_4.png" alt="Bathroom refurbishment">
+            <img src="bathroom_5.png" alt="Bathroom refurbishment">
+            <img src="bathroom_6.png" alt="Bathroom refurbishment">
+            <img src="bathroom_before_3.png" alt="Bathroom before refurbishment">
+            <img src="bathroom_mid_3.png" alt="Bathroom mid refurbishment">
+            <img src="bathroom_after_3.png" alt="Bathroom after refurbishment">
+            <img src="shower_before_1.png" alt="Shower before refurbishment">
+            <img src="shower_after_1.png" alt="Shower after refurbishment">
+            <img src="shower_before_2.png" alt="Shower before refurbishment">
+            <img src="shower_after_2.png" alt="Shower after refurbishment">
+          </main>
+
+<footer class="footer-distributed">
+        
+    <div class="footer-left">
+
+        <p class="footer-links">
+            <a href="index.html" class="link-1">Home</a>
+            
+            <a href="services.html">Services</a>
+        
+            <a href="media.html">Gallery</a>
+        
+            <a href="contact.html">Contact</a>
+        </p>
+
+        <p class="footer-company-name">S&H Refurbishments © 2023</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <p>077 3849 7178</p>
+        </div>
+
+        <div>
+            <p><a href="mailto:info@shrefurbishments.co.uk">info@shrefurbishments.co.uk</a></p>
+        </div>
+    </div>
+
+    
+
+</footer>
+
+
+
+
+
+
+
+    </body>
+    
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>S&H Refurbishments</title>
+        <link rel="stylesheet" type="text/css" href="services.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h2>S&H Refurbishments</h2>
+            </div>
+            <div class="navigation">
+                <input type="checkbox" id="nav-checkbox">
+                <label for="nav-checkbox" class="nav-toggle">
+                    <ion-icon name="menu-outline" alt="open menu" class="open"></ion-icon>
+                    <ion-icon name="close-outline" alt="close menu" class="close"></ion-icon>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="media.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <script>
+            $(document).ready(function(){
+                $(window).bind('scroll', function(){
+                    var gap = 50;
+                    if($(window).scrollTop() > gap){
+                        $('header').addClass('active');
+                    } else{
+                        $('header').removeClass('active');
+                    }
+                });
+            });
+        </script>
+
+
+        <div class="hero">
+            <h1>Our Services</h1>
+            <h3>Request a Free Quote</h3>
+            <a href="contact.html"> Message Us</a>
+        </div>
+        <div class="content">
+            <h3 class="services-title">We offer a wide range of services including but not limited to:</h3>
+            <ul>
+                <li>Full Bathroom Refurbishments</li>
+                <li>Full Kitchen Refurbishments</li>
+                <li>Decorating (Indoor only)</li>
+                <li>Joinery</li>
+                <li>Flooring</li>
+                <li>Tiling</li>
+            </ul>
+            <p></p>
+        </div>
+        
+
+
+
+
+
+
+
+
+        <footer class="footer-distributed">
+        
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a href="index.html" class="link-1">Home</a>
+                    
+                    <a href="services.html">Services</a>
+                
+                    <a href="media.html">Gallery</a>
+                
+                    <a href="contact.html">Contact</a>
+                </p>
+
+                <p class="footer-company-name">S&H Refurbishments © 2023</p>
+            </div>
+
+            <div class="footer-center">
+                <div>
+                    <p>077 3849 7178</p>
+                </div>
+
+                <div>
+                    <p><a href="mailto:info@shrefurbishments.co.uk">info@shrefurbishments.co.uk</a></p>
+                </div>
+            </div>
+        </footer>
+        </body>
+</html>
